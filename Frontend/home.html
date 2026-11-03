@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@6.0.0-alpha.1/dist/css/bootstrap.min.css"
+      rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.min.css">
+    <link rel="stylesheet" href="styles/styles.css">
+    <link rel="stylesheet" href="styles/utility.css">
+
+</head>
+<body class="">
+    <div class="container">
+        <!-- Sidebar -->
+        <section class="sidebar d-flex flex-column justify-content-start w-percent-20 h-full p-5 border-end border-subtle-blue border-1">
+            <div class="bot-brand d-flex flex-row mb-9 justify-content-between">
+                <h4 class="">AmirBot</h4>
+                <div class="buttons">
+                    <button class="border-0 bg-transparent"><i class="fa-solid fa-magnifying-glass"></i></button>
+                    <button class="border-0 bg-transparent"><i class="fa-solid fa-bars"></i></button>
+                </div>
+            </div>
+            <div class="sidebar-options border-bottom border-1 pb-2">
+                <div class="sidebar-option new-chat d-flex flex-row flex-gap-10 cursor-pointer">
+                    <i class="fa-solid fa-pen-to-square mt-1"></i>
+                    <p>New Chat</p>
+                </div>
+                <div class="sidebar-option images d-flex flex-row flex-gap-10 cursor-pointer">
+                    <i class="fa-solid fa-images mt-1"></i>
+                    <p>Images</p>
+                </div>
+                <div class="sidebar-option schedule d-flex flex-row flex-gap-10 cursor-pointer">
+                    <i class="fa-solid fa-clock mt-1"></i>
+                    <p>Scheduled</p>
+                </div>
+                <div class="sidebar-option library d-flex flex-row flex-gap-10 cursor-pointer">
+                    <i class="fa-solid fa-folder mt-1"></i>
+                    <p>Library</p>
+                </div>
+                <div class="sidebar-option about-us d-flex flex-row flex-gap-10 cursor-pointer">
+                    <i class="fa-solid fa-circle-info mt-1"></i>
+                    <p>About US</p>
+                </div>
+            </div>
+            <ul class="recent-chats d-flex flex-column justify-content-start">
+                <li class="recent-chat d-flex flex-row align-items-center justify-content-between h-p-25 w-full cursor-pointer py-5 ps-2 rounded-5">
+                    chat-num1
+                    <div class="item-options d-flex flex-row">
+                        <button class="bg-transparent border-0 fs-xs color-gray opacity-0"><i class="fa-solid fa-ellipsis"></i></button>
+                        <button class="bg-transparent border-0 fs-xs color-gray opacity-0"><i class="fa-solid fa-thumbtack"></i></button>
+                    </div>
+                </li>
+                <li class="recent-chat d-flex flex-row align-items-center justify-content-between h-p-25 w-full cursor-pointer py-5 ps-2 rounded-5">
+                    chat-num2
+                    <div class="item-options d-flex flex-row">
+                        <button class="bg-transparent border-0 fs-xs color-gray opacity-0"><i class="fa-solid fa-ellipsis"></i></button>
+                        <button class="bg-transparent border-0 fs-xs color-gray opacity-0"><i class="fa-solid fa-thumbtack"></i></button>
+                    </div>
+                </li>
+                <li class="recent-chat d-flex flex-row align-items-center justify-content-between h-p-25 w-full cursor-pointer py-5 ps-2 rounded-5">
+                    chat-num3
+                    <div class="item-options d-flex flex-row">
+                        <button class="bg-transparent border-0 fs-xs color-gray opacity-0"><i class="fa-solid fa-ellipsis"></i></button>
+                        <button class="bg-transparent border-0 fs-xs color-gray opacity-0"><i class="fa-solid fa-thumbtack"></i></button>
+                    </div>
+                </li>
+            </ul>
+    
+        </section>
+
+    </div>
+    <!-- Main -->
+    <main class="w-percent-80">
+
+        <!-- header -->
+        <header>
+            <nav class="d-flex flex-row">
+                <div class="AI-Assistants d-flex flex-row flex-gap-20 ms-auto me-auto mt-5">
+                    <button class="AI-Assistant ChatGPT d-flex flex-row bg-muted-primary border border-2 border-primary rounded-4 color-white opacity-100">
+                        ChatGPT
+                    </button>
+                    <button class="AI-Assistant Grok d-flex flex-row bg-muted-accent border border-2 border-accent rounded-4 color-white opacity-50">
+                        Grok
+    
+                    </button>
+                    <button class="AI-Assistant Meta d-flex flex-row bg-muted-success border border-2 border-success rounded-4 color-white opacity-50">
+                        Meta
+    
+                    </button>
+                    <button class="AI-Assistant Claude d-flex flex-row bg-muted-warning border border-2 border-warning rounded-4 color-white opacity-50">
+                        Claude
+                    </button>
+                    <button class="AI-Assistant Alibaba d-flex flex-row bg-muted-danger border border-2 border-danger rounded-4 color-white opacity-50">
+                        Alibaba
+    
+                    </button>
+                </div>
+                <button class="color-blue border-0 bg-transparent me-5 mt-5"><i class="fa-solid fa-right-to-bracket"></i></button>
+            </nav>
+        </header>
+        
+        <!-- Chat Section -->
+        <section class="Chat d-flex flex-column position-relative h-p-500 top-p-25 start-p-100 overflow-y-scroll py-5">
+            <!-- <div class="Chat-box bg-subtle-primary rounded-9 position-absolute start-p-75 top-p-100 w-auto max-w-p-750 h-auto color-white p-5">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut repudiandae, dolores mollitia itaque omnis dolorum eum molestias doloremque. Corporis nemo aut inventore adipisci at veniam?
+            </div> -->
+            <!-- <div class="prompt-options d-flex flex-row position-relative start-p-100">
+                <button class="color-blue border-0 bg-transparent me-5 mt-5"><i class="fa-solid fa-copy"></i></button>
+                <button class="color-blue border-0 bg-transparent me-5 mt-5"><i class="fa-solid fa-arrow-up-from-bracket"></i></button>
+                <button class="color-blue border-0 bg-transparent me-5 mt-5"><i class="fa-solid fa-pencil"></i></button>
+            </div> -->
+            <!-- <div class="response-division position-absolute start-p-75 w-auto max-w-p-750 h-auto color-black p-4"></div> -->
+        </section>
+
+        <!-- Input Box -->
+        <div class="input-box d-flex flex-row bg-white bg-10 border border-3 border-primary position-absolute start-50 bottom-0 rounded-9 translate-middle-x mb-10 p-3 w-75 h-auto">
+            <div class="language-model">
+                <button class="form-control combobox-toggle w-auto" type="button"
+                    data-bs-toggle="combobox"
+                    data-bs-name="option"
+                    data-bs-placeholder="Choose model...">
+                    <span class="combobox-value">Choose model...</span>
+                    <svg class="combobox-caret" width="10" height="16" viewBox="0 0 10 16" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M0.46967 5.46967C0.762563 5.17678 1.23744 5.17678 1.53033 5.46967L5 8.93934L8.46967 5.46967C8.76256 5.17678 9.23744 5.17678 9.53033 5.46967C9.82322 5.76256 9.82322 6.23744 9.53033 6.53033L5.53033 10.5303C5.23744 10.8232 4.76256 10.8232 4.46967 10.5303L0.46967 6.53033C0.176777 6.23744 0.176777 5.76256 0.46967 5.46967Z" fill="currentcolor"/></svg>
+                </button>
+                <div class="menu">
+                    <button class="menu-item" type="button" data-bs-value="1">GPT OSS 120B</button>
+                    <button class="menu-item" type="button" data-bs-value="2">GPT-OSS 20B</button>
+                    <button class="menu-item" type="button" data-bs-value="3">GPT-OSS-SAFEGUARD 20B</button>
+                </div>
+            </div>
+            <input type="text" class="prompt-input bg-transparent w-75 ms-6" placeholder="Ask ChatGPT">
+            <button class="color-blue border-0 bg-transparent mr-10"><i class="fa-solid fa-plus"></i></button>
+            <button class="send-button color-blue border-0 bg-transparent"><i class="fa-regular fa-paper-plane"></i></button>
+        </div>
+    </main>
+
+    
+<script type="module" src="https://cdn.jsdelivr.net/npm/bootstrap@6.0.0-alpha.1/dist/js/bootstrap.bundle.min.js"></script>
+<script src="js_files/AI_Assistant.js"></script>
+<script type="module" src="js_files/Chat_Section.js"></script>
+<script src="js_files/Sidebar.js"></script>
+<script type="module" src="../Backend/running_models/ModelInterface.js"></script>
+</body>
+</html>
