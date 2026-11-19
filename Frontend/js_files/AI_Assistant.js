@@ -1,6 +1,8 @@
 const AI_Assistants = document.querySelectorAll('.AI-Assistant')
 const mainElement = document.querySelector('main')
 const combobox_options = document.querySelector('.language-model .menu')
+const chat_section = document.querySelector('.Chat')
+const language_name = document.querySelector('.form-control')
 
 const assistantBackgrounds = {
     ChatGPT: 'url("../images/ChatGPT.png")',
@@ -36,6 +38,9 @@ const assistantModels = {
 
 AI_Assistants.forEach((assistant) => {
     assistant.addEventListener('click', function(){
+        chat_section.innerHTML = ''
+        language_name.dataBsPlaceholder = 'Choose model...'
+        language_name.querySelector('span').textContent = 'Choose model...'
         AI_Assistants.forEach((a) => {
             a.classList.remove('opacity-100')
             a.classList.add('opacity-50')
@@ -53,14 +58,8 @@ AI_Assistants.forEach((assistant) => {
                 option.type = 'button'
                 option.dataset.bsValue = index+1
                 option.textContent = asiistantModel
-                console.log(option)
                 combobox_options.appendChild(option)
             })
         }
-        // const input_box = document.querySelector('.input-box input')
-        // input_box.removeAttribute('placeholder')
-        // document.querySelector('.input-box input').placeholder = `Ask `
-        // console.log(document.querySelector('.input-box input').placeholder)
-        
     })
 })

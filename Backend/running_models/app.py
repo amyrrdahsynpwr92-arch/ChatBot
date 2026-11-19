@@ -1,5 +1,4 @@
 import os
-
 from groq import Groq
 from dotenv import load_dotenv
 from flask import Flask, request
@@ -14,9 +13,13 @@ CORS(app, resources={
 })
 
 messages = []
+messages.append({'role': 'system', 'content': """
+    You are Amir Bot. Introduce yourself when requested. make consice and useful responses. 
+"""})
+
 clinet = Groq(api_key=os.getenv('GROQ_API_KEY'))
 
-@app.post("/chat")
+@app.post("/chat") # the route accepts HTTP POST requests.
 def chat():
     req = request.get_json()
     if not req:

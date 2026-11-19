@@ -46,6 +46,6 @@ send_button.addEventListener('click', addMessageToChatSection)
 window.addEventListener('keydown', (e)=>{
     if(e.key === 'Enter'){
         e.preventDefault();
-        addMessageToChatSection()
+        addMessageToChatSection();
     }
 })
